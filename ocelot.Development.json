@@ -4,12 +4,9 @@
       "DownstreamPathTemplate": "/api/v1/users",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
-        {
-          "Host": "users",
-          "Port": 8081
-        }
+        { "Host": "users", "Port": 8081 }
       ],
-      "UpstreamPathTemplate": "/users/signup",
+      "UpstreamPathTemplate": "/signup",
       "UpstreamHttpMethod": ["POST"],
       "FileCacheOptions": {
         "TtlSeconds": 30
@@ -24,7 +21,7 @@
           "Port": 8081
         }
       ],
-      "UpstreamPathTemplate": "/users/login",
+      "UpstreamPathTemplate": "/login",
       "UpstreamHttpMethod": ["POST"],
       "FileCacheOptions": {
         "TtlSeconds": 30

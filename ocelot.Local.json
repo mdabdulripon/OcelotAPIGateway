@@ -9,7 +9,7 @@
           "Port": 8081
         }
       ],
-      "UpstreamPathTemplate": "users/signup",
+      "UpstreamPathTemplate": "/signup",
       "UpstreamHttpMethod": ["POST"],
       "FileCacheOptions": {
         "TtlSeconds": 30
