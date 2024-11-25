@@ -127,10 +127,7 @@
         }
       ],
       "UpstreamPathTemplate": "/users/check-merchant",
-      "UpstreamHttpMethod": ["GET"],
-      "FileCacheOptions": {
-        "TtlSeconds": 30
-      }
+      "UpstreamHttpMethod": ["GET"]
     },
     {
       "DownstreamPathTemplate": "/api/v1/users/check-email",
@@ -479,6 +476,11 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:8080"
+    "BaseUrl": "http://localhost:8080",
+    "Cors": {
+      "AllowedOrigins": ["http://localhost:4200", "http://localhost:4100"],
+      "AllowedMethods": ["GET", "POST", "PUT", "DELETE"],
+      "AllowedHeaders": ["Content-Type", "Authorization"]
+    }
   }
 }
